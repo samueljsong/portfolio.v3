@@ -18,7 +18,7 @@
     --tertiary: rgb(128, 128, 128);
 
     --btn-padding: 1rem 2rem 1rem 2rem;
-    --mbtn-padding: 0.3rem 1rem 0.3rem 1rem;
+    --mbtn-padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 /* Global Css */
@@ -122,6 +122,10 @@ footer {
 @media (max-width: 480px) {
     .btn {
         padding: var(--mbtn-padding);
+    }
+
+    .landing-title {
+        font-size: 35vw;
     }
 
     /* .info-text-container {
