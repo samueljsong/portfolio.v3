@@ -7,14 +7,21 @@
     /* Font Family */
     --ff-heading: heading36;
     --ff-text: kiona;
+    --ff-bold: humane-bold;
+
+    --fs-text: 1.2rem;
+    --mfs-text: 0.6rem;
 
     --primary: #131313;
     --secondary: #ebe9e4;
     --accent: #e0b082;
+    --tertiary: rgb(128, 128, 128);
 
-    --btn-padding: 0.5rem 1rem 0.5rem 1rem;
+    --btn-padding: 1rem 2rem 1rem 2rem;
+    --mbtn-padding: 0.3rem 1rem 0.3rem 1rem;
 }
 
+/* Global Css */
 .btn {
     padding: var(--btn-padding);
 }
@@ -32,7 +39,10 @@
 .text {
     font-family: var(--ff-text);
     line-height: 100%;
+    font-weight: bold;
 }
+
+/* Landing Section */
 
 .landing {
     height: 100vh;
@@ -47,12 +57,22 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 3rem;
 }
 
 .landing-title {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     font-size: 25vw;
+    background: none;
+    user-select: none;
+    line-height: 90%;
+}
+
+.info-text-container {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    color: var(--primary);
 }
 
 .char {
@@ -61,10 +81,50 @@
 }
 
 .landing-btn {
-    background: var(--primary);
-    border: none;
+    background: none;
+    border: solid 1px var(--primary);
     border-radius: 25px;
-    color: var(--secondary);
+    color: var(--primary);
     font-weight: bold;
     font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+header {
+    position: absolute;
+}
+
+footer {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    width: 20rem;
+    height: 4rem;
+    bottom: 0;
+    display: flex;
+    font-family: var(--ff-text);
+    font-weight: bold;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 0;
+    color: rgb(128, 128, 128);
+    gap: 0.5rem;
+}
+
+.contact-icon {
+    width: 2rem;
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: var(--mbtn-padding);
+    }
+
+    .info-text-container {
+        font-size: var(--mfs-text);
+    }
 }
