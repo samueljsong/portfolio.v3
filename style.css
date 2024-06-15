@@ -10,7 +10,7 @@
     --ff-bold: humane-bold;
 
     --fs-text: 1.2rem;
-    --mfs-text: 0.6rem;
+    --mfs-text: 0.7rem;
 
     --primary: #131313;
     --secondary: #ebe9e4;
@@ -70,7 +70,7 @@
 .info-text-container {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     display: flex;
-    width: 45%;
+    width: 40%;
     justify-content: space-between;
     color: var(--primary);
 }
@@ -124,7 +124,7 @@ footer {
         padding: var(--mbtn-padding);
     }
 
-    .info-text-container {
+    /* .info-text-container {
         font-size: var(--mfs-text);
-    }
+    } */
 }
