@@ -32,3 +32,13 @@
     font-family: monument;
     src: url(/fonts/MonumentExtended-Ultrabold.otf);
 }
+
+@font-face {
+    font-family: satoshi-bold;
+    src: url(/fonts/Satoshi-Bold.woff2);
+}
+
+@font-face {
+    font-family: satoshi-medium;
+    src: url(/fonts/Satoshi-Medium.woff2);
+}
